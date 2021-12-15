@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(void)//program execution begine at the main funtion
+{
+    printf("welcomr to C");
+    return 0;
+}//end of the  main funtion

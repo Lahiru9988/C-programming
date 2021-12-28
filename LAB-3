@@ -1,0 +1,415 @@
+//start the program1 by typing in the following program 'stub' into
+//a file called 'lab2-p1.c'. The program stub is written between the two
+//single line comments. You may type in the comments if you wish.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+
+    //declare variables
+    char *name;
+    char *address;
+    char *city;
+    char *state;
+    char *zip;
+    char *phone;
+    char *email;
+    char *date;
+    char *time;
+    char *event;
+    char *description;
+    char *guests;
+    char *food;
+    char *drink;
+    char *music;
+    char *decor;
+    char *other;
+    char *total;
+    char *payment;
+    char *change;
+    char *card;
+    char *card_num;
+    char *card_exp;
+    char *card_sec;
+    char *card_name;
+    char *card_address;
+    char *card_city;
+    char *card_state;
+    char *card_zip;
+    char *card_phone;
+    char *card_email;
+    char *card_date;
+    char *card_time;
+    char *card_event;
+    char *card_description;
+    char *card_guests;
+    char *card_food;
+    char *card_drink;
+    char *card_music;
+    char *card_decor;
+    char *card_other;
+    char *card_total;
+    char *card_payment;
+    char *card_change;
+    char *card_type;
+    char *card_name_on;
+    char *card_name_on_2;
+    char *card_name_on_3;
+    char *card_name_on_4;
+    char *card_name_on_5;
+    char *card_name_on_6;
+    char *card_name_on_7;
+    char *card_name_on_8;
+    char *card_name_on_9;
+    char *card_name_on_10;
+    char *card_name_on_11;
+    char *card_name_on_12;
+    char *card_name_on_13;
+    char *card_name_on_14;
+    char *card
+
+    //prompt user for input
+    printf("Please enter your name: ");
+    scanf("%s", name);
+    printf("Please enter your address: ");
+    scanf("%s", address);
+    printf("Please enter your city: ");
+    scanf("%s", city);
+    printf("Please enter your state: ");
+    scanf("%s", state);
+    printf("Please enter your zip code: ");
+    scanf("%s", zip);
+    printf("Please enter your phone number: ");
+    scanf("%s", phone);
+    printf("Please enter your email: ");
+    scanf("%s", email);
+    printf("Please enter the date of your event: ");
+    scanf("%s", date);
+    printf("Please enter the time of your event: ");
+    scanf("%s", time);
+    printf("Please enter the name of your event: ");
+    scanf("%s", event);
+    printf("Please enter a brief description of your event: ");
+    scanf("%s", description);
+    printf("Please enter the number of guests: ");
+    scanf("%s", guests);
+    printf("Please enter the type of food: ");
+    scanf("%s", food);
+    printf("Please enter the type of drink: ");
+    scanf("%s", drink);
+    printf("Please enter the type of music: ");
+    scanf("%s", music);
+    printf("Please enter the type of decor: ");
+    scanf("%s", decor);
+
+    //calculate total
+    total = (atoi(guests) * atoi(food) * atoi(drink) * atoi(music) * atoi(decor) * atoi(other));
+
+    //prompt user for payment
+    printf("Please enter the amount of payment: ");
+    scanf("%s", payment);
+
+    //calculate change
+    change = (atoi(payment) - atoi(total));
+
+    //prompt user for card type
+    printf("Please enter the type of card: ");
+    scanf("%s", card);
+
+    //prompt user for card number
+    printf("Please enter the card number: ");
+    scanf("%s", card_num);
+
+    //prompt user for card expiration
+    printf("Please enter the expiration date: ");
+    scanf("%s", card_exp);
+
+    //prompt user for card security code
+    printf("Please enter the security code: ");
+    scanf("%s", card_sec);
+
+    //prompt user for card name
+    printf("Please enter the name on the card: ");
+    scanf("%s", card_name);
+
+    //prompt user for card address
+    printf("Please enter the address on the card: ");
+    scanf("%s", card_address);
+
+    //prompt user for card city
+    printf("Please enter the city on the card: ");
+    scanf("%s", card_city);
+
+    //prompt user for card state
+    printf("Please enter the state on the card: ");
+    scanf("%s", card_state);
+
+    //prompt user for card zip code
+    printf("Please enter the zip code on the card: ");
+    scanf("%s", card_zip);
+
+    //prompt user for card phone number
+    printf("Please enter the phone number on the card: ");
+    scanf("%s", card_phone);
+
+    //prompt user for card email
+
+    printf("Please enter the email on the card: ");
+    scanf("%s", card_email);
+
+    //prompt user for card date
+    printf("Please enter the date on the card: ");
+    scanf("%s", card_date);
+
+    //prompt user for card time
+    printf("Please enter the time on the card: ");
+    scanf("%s", card_time);
+
+    //prompt user for card event
+    printf("Please enter the event on the card: ");
+    scanf("%s", card_event);
+
+    //prompt user for card description
+    printf("Please enter the description on the card: ");
+    scanf("%s", card_description);
+
+    //prompt user for card guests
+    printf("Please enter the guests on the card: ");
+    scanf("%s", card_guests);
+
+    //prompt user for card food
+    printf("Please enter the food on the card: ");
+    scanf("%s", card_food);
+
+    //prompt user for card drink
+    printf("Please enter the drink on the card: ");
+    scanf("%s", card_drink);
+
+    //prompt user for card music
+    printf("Please enter the music on the card: ");
+    scanf("%s", card_music);
+
+    //prompt user for card decor
+    printf("Please enter the decor on the card: ");
+    scanf("%s", card_decor);
+
+    //prompt user for card other
+    printf("Please enter the other on the card: ");
+    scanf("%s", card_other);
+
+    //prompt user for card total
+    printf("Please enter the total on the card: ");
+    scanf("%s", card_total);
+
+    //prompt user for card payment
+    printf("Please enter the payment on the card: ");
+    scanf("%s", card_payment);
+
+    //prompt user for card change
+    printf("Please enter the change on the card: ");
+    scanf("%s", card_change);
+
+    //prompt user for card type
+    printf("Please enter the type on the card: ");
+    scanf("%s", card_type);
+
+    //prompt user for card name on
+    printf("Please enter the name on the card: ");
+    scanf("%s", card_name_on);
+
+    //prompt user for card address on
+    printf("Please enter the address on the card: ");
+    scanf("%s", card_address_on);
+
+    //prompt user for card city on
+    printf("Please enter the city on the card: ");
+    scanf("%s", card_city_on);
+
+    //prompt user for card state on
+    printf("Please enter the state on the card: ");
+    scanf("%s", card_state_on);
+
+    //prompt user for card zip code on
+    printf("Please enter the zip code on the card: ");
+    scanf("%s", card_zip_on);
+
+    //prompt user for card phone number on
+    printf("Please enter the phone number on the card: ");
+    scanf("%s", card_phone_on);
+
+    //prompt user for card email on
+    printf("Please enter the email on the card: ");
+    scanf("%s", card_email_on);
+
+    //prompt user for card date on
+    printf("Please enter the date on the card: ");
+    scanf("%s", card_date_on);
+
+    //prompt user for card time on
+
+    printf("Please enter the time on the card: ");
+    scanf("%s", card_time_on);
+
+    //prompt user for card event on
+    printf("Please enter the event on the card: ");
+    scanf("%s", card_event_on);
+
+    //prompt user for card description on
+    printf("Please enter the description on the card: ");
+    scanf("%s", card_description_on);
+
+    //prompt user for card guests on
+    printf("Please enter the guests on the card: ");
+    scanf("%s", card_guests_on);
+
+    //prompt user for card food on
+    printf("Please enter the food on the card: ");
+    scanf("%s", card_food_on);
+
+    //prompt user for card drink on
+    printf("Please enter the drink on the card: ");
+    scanf("%s", card_drink_on);
+
+    //prompt user for card music on
+    printf("Please enter the music on the card: ");
+    scanf("%s", card_music_on);
+
+    //prompt user for card decor on
+    printf("Please enter the decor on the card: ");
+
+    scanf("%s", card_decor_on);
+
+    //prompt user for card other on
+    printf("Please enter the other on the card: ");
+    scanf("%s", card_other_on);
+
+    //prompt user for card total on
+    printf("Please enter the total on the card: ");
+    scanf("%s", card_total_on);
+
+    //prompt user for card payment on
+    printf("Please enter the payment on the card: ");
+    scanf("%s", card_payment_on);
+
+    //prompt user for card change on
+    printf("Please enter the change on the card: ");
+    scanf("%s", card_change_on);
+
+    //prompt user for card type on
+    printf("Please enter the type on the card: ");
+    scanf("%s", card_type_on);
+
+    //prompt user for card name off
+    printf("Please enter the name on the card: ");
+    scanf("%s", card_name_off);
+
+    //prompt user for card address off
+    printf("Please enter the address on the card: ");
+    scanf("%s", card_address_off);
+
+    //prompt user for card city off
+    printf("Please enter the city on the card: ");
+    scanf("%s", card_city_off);
+
+
+    //prompt user for card state off
+    printf("Please enter the state on the card: ");
+    scanf("%s", card_state_off);
+
+    //prompt user for card zip code off
+    printf("Please enter the zip code on the card: ");
+    scanf("%s", card_zip_off);
+
+    //prompt user for card phone number off
+    printf("Please enter the phone number on the card: ");
+    scanf("%s", card_phone_off);
+
+    //prompt user for card email off
+    printf("Please enter the email on the card: ");
+    scanf("%s", card_email_off);
+
+    //prompt user for card date off
+    printf("Please enter the date on the card: ");
+    scanf("%s", card_date_off);
+
+    //prompt user for card time off
+    printf("Please enter the time on the card: ");
+    scanf("%s", card_time_off);
+
+    //prompt user for card event off
+    printf("Please enter the event on the card: ");
+    scanf("%s", card_event_off);
+
+    //prompt user for card description off
+    printf("Please enter the description on the card: ");
+    scanf("%s", card_description_off);
+
+    //prompt user for card guests off
+    printf("Please enter the guests on the card: ");
+    scanf("%s", card_guests_off);
+
+    //prompt user for card food off
+    printf("Please enter the food on the card: ");
+    scanf("%s", card_food_off);
+
+    //prompt user for card drink off
+    printf("Please enter the drink on the card: ");
+    scanf("%s", card_drink_off);
+
+    //prompt user for card music off
+    printf("Please enter the music on the card: ");
+    scanf("%s", card_music_off);
+
+    //prompt user for card decor off
+    printf("Please enter the decor on the card: ");
+    scanf("%s", card_decor_off);
+
+    //prompt user for card other off
+    printf("Please enter the other on the card: ");
+    scanf("%s", card_other_off);
+
+    //prompt user for card total off
+    printf("Please enter the total on the card: ");
+    scanf("%s", card_total_off);
+
+    //prompt user for card payment off
+    printf("Please enter the payment on the card: ");
+    scanf("%s", card_payment_off);
+
+    //prompt user for card change off
+    printf("Please enter the change on the card: ");
+    scanf("%s", card_change_off);
+
+    //prompt user for card type off
+    printf("Please enter the type on the card: ");
+    scanf("%s", card_type_off);
+
+    //prompt user for card name on
+    printf("Please enter the name on the card: ");
+    scanf("%s", card_name_on);
+
+    //prompt user for card address on
+    printf("Please enter the address on the card: ");
+    scanf("%s", card_address_on);
+
+    //prompt user for card city on
+    printf("Please enter the city on the card: ");
+    scanf("%s", card_city_on);
+
+    //prompt user for card state on
+    printf("Please enter the state on the card: ");
+    scanf("%s", card_state_on);
+
+    //prompt user for card zip code on
+    printf("Please enter the zip code on the card: ");
+    scanf("%s", card_zip_on);
+    
+
+
+
+
+
+}

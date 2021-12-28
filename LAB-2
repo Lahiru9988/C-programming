@@ -1,0 +1,26 @@
+//A prime number is a number that is devisible only by 1 and it self.
+//1 it self is not considered a prime. (2,3,5,7,11 ... are prime numbers)
+//write a program to print all the prime numbers less than a given number.
+//(use #define LIMIT 10000 )
+
+#include <stdio.h>
+#define LIMIT 10000
+
+int main() {
+
+    int i, j, flag;
+    for (i = 2; i < LIMIT; i++) {
+        flag = 1;
+        for (j = 2; j < i; j++) {
+            if (i % j == 0) {
+                flag = 0;
+                break;
+            }
+        }
+        if (flag == 1) {
+            printf("%d\n", i);
+        }
+    }
+    return 0;
+
+}

@@ -1,0 +1,24 @@
+//Write a program that starts with a positive integer N and then
+//displays the sum of the first N odd integers. 
+//i.e. if N=4 your program will print 16 (1+3+5+7 = 16)
+//(use a symbolic constant (#define N 5) and use N in your code)
+
+#include <stdio.h>
+#define N 5
+
+int main() {
+
+    int i, sum = 0;
+
+    for (i = 1; i <= N; i++) {
+        if (i % 2 != 0) {
+            sum += i;
+        }
+    }
+
+    printf("%d\n", sum);
+
+    return 0;
+
+
+}
